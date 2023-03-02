@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="10dp"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/background">
+
+        <TextView
+            android:id="@+id/subname"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:autoSizeTextType="uniform"
+            android:text="Engineering Physics 1"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:layout_below="@id/subname"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backgroundin">
+
+            <RelativeLayout
+                android:id="@+id/rel_avg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/avgPB"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:indeterminateOnly="false"
+                    tools:progress="100"
+                    android:progressDrawable="@drawable/progress_circle">
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/avg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/avgPB"
+                    android:layout_alignTop="@+id/avgPB"
+                    android:layout_alignRight="@+id/avgPB"
+                    android:layout_alignBottom="@+id/avgPB"
+                    android:gravity="center"
+                    android:text="10%"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="65dp"
+                    android:gravity="center"
+                    android:text="Average"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_th"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rel_avg"
+                android:layout_marginStart="10dp">
+
+                <ProgressBar
+                    android:id="@+id/avgthPB"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/progress_circle"
+                    tools:progress="100">
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/avgth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/avgthPB"
+                    android:layout_alignTop="@+id/avgthPB"
+                    android:layout_alignRight="@+id/avgthPB"
+                    android:layout_alignBottom="@+id/avgthPB"
+                    android:gravity="center"
+                    android:text="10%"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Average\nTheory"
+                    android:textColor="@color/black"
+                    android:textSize="12dp">
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_prac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rel_th"
+                android:layout_marginStart="10dp">
+
+                <ProgressBar
+                    android:id="@+id/avgprPB"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/progress_circle"
+                    tools:progress="10">
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/avgpr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/avgprPB"
+                    android:layout_alignTop="@+id/avgprPB"
+                    android:layout_alignRight="@+id/avgprPB"
+                    android:layout_alignBottom="@+id/avgprPB"
+                    android:gravity="center"
+                    android:text="10%"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Average\nPractical"
+                    android:textColor="@color/black"
+                    android:textSize="12dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rel_prac"
+                android:layout_marginStart="10dp">
+
+                <ProgressBar
+                    android:id="@+id/avg3dPB"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/progress_circle"
+                    tools:progress="10">
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/avg3d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/avg3dPB"
+                    android:layout_alignTop="@+id/avg3dPB"
+                    android:layout_alignRight="@+id/avg3dPB"
+                    android:layout_alignBottom="@+id/avg3dPB"
+                    android:gravity="center"
+                    android:text="10%"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Last 3\nDays"
+                    android:textColor="@color/black"
+                    android:textSize="12dp">
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rel_3"
+                android:layout_marginStart="10dp">
+
+                <ProgressBar
+                    android:id="@+id/avg7dPB"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/progress_circle"
+                    tools:progress="10">
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/avg7d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/avg7dPB"
+                    android:layout_alignTop="@+id/avg7dPB"
+                    android:layout_alignRight="@+id/avg7dPB"
+                    android:layout_alignBottom="@+id/avg7dPB"
+                    android:gravity="center"
+                    android:text="10%"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Last 7\nDays"
+                    android:textColor="@color/black"
+                    android:textSize="12dp">
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rel_7"
+                android:layout_marginStart="10dp">
+
+                <ProgressBar
+                    android:id="@+id/avgmonthPB"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/progress_circle"
+                    tools:progress="10">
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/avgmonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/avgmonthPB"
+                    android:layout_alignTop="@+id/avgmonthPB"
+                    android:layout_alignRight="@+id/avgmonthPB"
+                    android:layout_alignBottom="@+id/avgmonthPB"
+                    android:gravity="center"
+                    android:text="10%"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Last\nMonth"
+                    android:textColor="@color/black"
+                    android:textSize="12dp">
+                </TextView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
